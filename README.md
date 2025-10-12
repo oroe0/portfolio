@@ -1,16 +1,11 @@
-# React + Vite
+# MTOT
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The MTOT is a vital resource available to highschool students to improve their mock trial skills. It offers live practice which greatly benefits your learning.
 
-Currently, two official plugins are available:
+- Never get bored with endless cases
+- Learn about the rules as a begineer
+- Recieve instant feedback to improve your skills
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## AI Capabilities
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The MTOT uses AI to create a seamless experience only available here. No other product offers the advantages which we can provide.
