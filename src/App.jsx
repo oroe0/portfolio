@@ -218,7 +218,7 @@ function App() {
             <h2>Dogs</h2>
             <p>I have two wonderful dogs — Cleo and Tucker. They inspire many of my works.</p>
             <div className="dog-gallery">
-              <img src="/portfolio/cleo.jpeg" alt="Cleo" className="dog-img" />
+              <img src="/cleo.jpeg" alt="Cleo" className="dog-img" />
               <img src="/portfolio/tucker.jpeg" alt="Tucker" className="dog-img" />
             </div>
           </section>
