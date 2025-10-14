@@ -201,7 +201,7 @@ function App() {
             <div className="hobby">
               <h3>Games</h3>
               <p>
-                I love playing games like <em>Hollow Knight</em> and <em>Dead Cells</em>.
+                I love playing games like <em>Hollow Knight</em> and <em>Silksong</em>.
                 I’m not great at them, but I love their design and atmosphere.
               </p>
             </div>
@@ -218,7 +218,7 @@ function App() {
             <h2>Dogs</h2>
             <p>I have two wonderful dogs — Cleo and Tucker. They inspire many of my works.</p>
             <div className="dog-gallery">
-              <img src="/cleo.jpeg" alt="Cleo" className="dog-img" />
+              <img src="/portfolio/cleo.jpeg" alt="Cleo" className="dog-img" />
               <img src="/portfolio/tucker.jpeg" alt="Tucker" className="dog-img" />
             </div>
           </section>
