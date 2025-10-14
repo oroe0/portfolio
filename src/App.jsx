@@ -245,9 +245,9 @@ function App() {
 
             <div className="art-card">
               <h3>The Argent Shaker</h3>
-              <img src="/portfolio/silver-bowl-prong-ring.jpeg" alt="Prong setting ring" className="art-img" />
+              <img src="/portfolio/silver-bowl-prong-ring.jpeg" alt="Prong setting ring"/>
               <p>
-                A thick, rounded silver lava rock ring with a loose prong setting — the rock moves when shaken.
+                A thick, rounded silver lava rock ring with a loose prong setting the rock shakes when moved.
                 Inspired by the horns visible in the final bossfight of <em>Hollow Knight</em>.
                 <br />
                 <a href="/portfolio/HK-inspiration.webp" target="_blank">View inspiration</a>
@@ -256,7 +256,7 @@ function App() {
 
             <div className="art-card">
               <h3>The Sedentary Liver</h3>
-              <img src="/portfolio/silver-dog-signet-ring.jpeg" alt="Silver dog signet ring" className="art-img" />
+              <img src="/portfolio/silver-dog-signet-ring.jpeg" alt="Silver dog signet ring"/>
               <p>
                 A large silver signet ring depicting one of my dogs, Tucker, asleep.
                 Made from a flat silver sheet and stained with acid for contrast.
@@ -266,7 +266,8 @@ function App() {
 
             <div className="art-card">
               <h3>The Fallen Watcher</h3>
-              <img src="/portfolio/tree-bookmark.jpeg" alt="Bent copper bookmark" className="art-img" />
+              <img src="/portfolio/tree-bookmark.jpeg" alt="Bent copper bookmark"/>
+              <img src='/portfolio/skeleton-bookmark-top.jpg' alt='Skeleton under a tree'/>
               <p>
                 A bent copper bookmark showing a skeleton staring at a bee nest on a tree.
                 Texturing plays a major role, emphasizing the depth of the shapes and the scene’s mood.
@@ -275,13 +276,60 @@ function App() {
 
             <div className="art-card">
               <h3>The Plant Swinger</h3>
-              <img src="/portfolio/frog-keychain.jpeg" alt="Brass frog keychain" className="art-img" />
+              <img src="/portfolio/frog-keychain.jpeg" alt="Brass frog keychain"/>
               <p>
                 A frog-shaped textured brass keychain inspired by 
                 <a href="/portfolio/frog-inspiration.jpg" target="_blank"> this photo</a>.
                 My very first project — and still one of the coolest to me.
               </p>
             </div>
+
+            <div className="art-card">
+              <h3>The Ethereal Ouroboros</h3>
+              <img src="/portfolio/dainty-ring.jpeg" alt="Thin brass ring"/>
+              <p>
+                Multiple people asked me for a small dainty ring made out of brass, so I made a few.
+                They don't take long to make, but they are very low quality. Brass is not a great material, unfortunately.
+              </p>
+            </div>
+
+            <div className="art-card">
+              <h3>The Verdant Crag</h3>
+              <img src="/portfolio/leaf-band-prong-ring.jpeg" alt="Rock set in ring"/>
+              <p>
+                One time I decided to make my sister a birthday gift, and this is what it was.
+                It contains a quartz rock from her trip to Mexico, and the band features a leaf design, as requested.
+              </p>
+            </div>
+
+            <div className="art-card">
+              <h3>The Clandestine Assemblage</h3>
+              <img src="/portfolio/thick-band-ring.jpeg" alt="Thick brass ring"/>
+              <p>
+                This was an upgrade to the first simple ring I made. It uses an extra thick piece of brass.
+                The outside truly was polished a lot, but the jewelry guard covers that up. The edges are not sanded.
+              </p>
+            </div>
+
+            <div className="art-card">
+              <h3>The Ameliorated Morsel</h3>
+              <img src="/portfolio/copper-jank-inlay-ring.jpeg" alt="Brass with copper inlay ring"/>
+              <p>
+                I had heard about inlay rings, and I wanted to test them out, but only quickly without too much effort.
+                This resulted in me using scrap metal, so the result looks really bad. Personally, I do not hate it as much as it looks bad.
+              </p>
+            </div>
+
+            <div className="art-card">
+              <h3>The __ __</h3>
+              <img src="/portfolio/dainty-ring.jpeg" alt="Thin brass ring"/>
+              <p>
+                Multiple people asked me for a small dainty ring made out of brass, so I made a few.
+                They don't take long to make, but they are very low quality. Brass is not a great material, unfortunately.
+              </p>
+            </div>
+
+            
 
           </div>
         </main>
