@@ -266,8 +266,8 @@ function App() {
 
             <div className="art-card">
               <h3>The Fallen Watcher</h3>
-              <img src="/portfolio/tree-bookmark.jpeg" alt="Bent copper bookmark"/>
-              <img src='/portfolio/skeleton-bookmark-top.jpg' alt='Skeleton under a tree'/>
+              <img src="/portfolio/tree-bookmarkFRONT.jpeg" alt="Bent copper bookmark"/>
+              <img src='/portfolio/tree-bookmarkABOVE.jpg' alt='Skeleton under a tree'/>
               <p>
                 A bent copper bookmark showing a skeleton staring at a bee nest on a tree.
                 Texturing plays a major role, emphasizing the depth of the shapes and the scene’s mood.
@@ -317,6 +317,72 @@ function App() {
               <p>
                 I had heard about inlay rings, and I wanted to test them out, but only quickly without too much effort.
                 This resulted in me using scrap metal, so the result looks really bad. Personally, I do not hate it as much as it looks bad.
+              </p>
+            </div>
+
+            <div className="art-card">
+              <h3>The Fathomless Ward</h3>
+              <img src="/portfolio/card-holder.jpeg" alt="Brass card holder"/>
+              <p>
+                I wanted to make a special card holder for a <a href='https://magic.wizards.com/en/formats/commander'>MTG commander</a>, so I made this. 
+                It works as intended and it is pretty nice.
+              </p>
+            </div>
+
+            <div className="art-card">
+              <h3>The Perpetual Perspicacity</h3>
+              <img src="/portfolio/spider-castL.jpeg" alt="Bronze cast spider left view"/>
+              <img src="/portfolio/spider-castR.jpeg" alt="Bronze cast spider right view"/>
+              <p>
+                As part of my first lost wax casting, I made a spider. Although a few limbs did not fully attach, I was able to replace them. 
+                I really like how this guy turned out. 
+              </p>
+            </div>
+
+            <div className="art-card">
+              <h3>The Anamnestic Anamnestic</h3>
+              <img src="/portfolio/tree-clockABOVE.jpeg" alt="Bronze clock falling on tree"/>
+              <img src="/portfolio/tree-clockFRONT.jpeg" alt="Bronze tree stretching branches"/>
+              <p>
+                As part of my first lost wax casting assignment, I replicated <a href='/portfolio/dalí-clock-inspiration.jpg'>The Persistence of Memory</a> by Salvador Dalí. 
+                It was supposed to be a charm to help me be more efficient with my time.
+              </p>
+            </div>
+
+            <div className="art-card">
+              <h3>The Exuviating Polliwog</h3>
+              <img src="/portfolio/silver-frogL.jpeg" alt="Small silver frog from left view"/>
+              <img src="/portfolio/silver-frogR.jpeg" alt="Small silver frog from right view"/>
+              <p>
+                As part of jewelry II, we had to make two additional lost wax casting, one out of soft wax, one out of hard wax. 
+                This was the soft wax one and I made it for a <a href='https://edhrec.com/commanders/grolnok-the-omnivore'>MTG croak counter</a>.
+              </p>
+            </div>
+
+            <div className="art-card">
+              <h3>The Coral Bauble</h3>
+              <img src="/portfolio/gemstone-signet-ring.jpeg" alt="Silver signet ring with pink rock"/>
+              <p>
+                For Christmas, I made my mother a silver signet ring with a pink gemstone bezel set on top. 
+                Personally, I think this thing looks fantastic.
+              </p>
+            </div>
+
+            <div className="art-card">
+              <h3>The __ __</h3>
+              <img src="/portfolio/silver-bunny-castL.jpeg" alt="Small silver bunny"/>
+              <img src="/portfolio/silver-bunny-castSIDE.jpeg" alt="Small silver bunny"/>
+              <p>
+                I made a small silver cast rabbit for my sister at Christmas. She likes bunnies, so I made one for her.
+              </p>
+            </div>
+
+            <div className="art-card">
+              <h3>The __ __</h3>
+              <img src="/portfolio/dainty-ring.jpeg" alt="Thin brass ring"/>
+              <p>
+                Multiple people asked me for a small dainty ring made out of brass, so I made a few.
+                They don't take long to make, but they are very low quality. Brass is not a great material, unfortunately.
               </p>
             </div>
 
