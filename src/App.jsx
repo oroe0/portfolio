@@ -233,7 +233,7 @@ function App() {
     return (
       <>
         <Header title='Art Projects' 
-          subtitle='This page showcases jewelry and metalwork projects I’ve created, with a few other art pieces included.'
+          subtitle='This page mainly showcases jewelry and metalwork projects I’ve created, but any other art pieces would also be included here.'
         />
 
         <div className="nav">
@@ -248,9 +248,7 @@ function App() {
               <img src="/portfolio/silver-bowl-prong-ring.jpeg" alt="Prong setting ring"/>
               <p>
                 A thick, rounded silver lava rock ring with a loose prong setting the rock shakes when moved.
-                Inspired by the horns visible in the final bossfight of <em>Hollow Knight</em>.
-                <br />
-                <a href="/portfolio/HK-inspiration.webp" target="_blank">View inspiration</a>
+                Inspired by <a href="/portfolio/HK-inspiration.webp" target="_blank">the horns</a> visible in the final bossfight of <em>Hollow Knight</em>.
               </p>
             </div>
 
@@ -261,26 +259,6 @@ function App() {
                 A large silver signet ring depicting one of my dogs, Tucker, asleep.
                 Made from a flat silver sheet and stained with acid for contrast.
                 Highly polished and reflective — one of my favorite pieces.
-              </p>
-            </div>
-
-            <div className="art-card">
-              <h3>The Fallen Watcher</h3>
-              <img src="/portfolio/tree-bookmarkFRONT.jpeg" alt="Bent copper bookmark"/>
-              <img src='/portfolio/tree-bookmarkABOVE.jpg' alt='Skeleton under a tree'/>
-              <p>
-                A bent copper bookmark showing a skeleton staring at a bee nest on a tree.
-                Texturing plays a major role, emphasizing the depth of the shapes and the scene’s mood.
-              </p>
-            </div>
-
-            <div className="art-card">
-              <h3>The Plant Swinger</h3>
-              <img src="/portfolio/frog-keychain.jpeg" alt="Brass frog keychain"/>
-              <p>
-                A frog-shaped textured brass keychain inspired by 
-                <a href="/portfolio/frog-inspiration.jpg" target="_blank"> this photo</a>.
-                My very first project — and still one of the coolest to me.
               </p>
             </div>
 
@@ -321,11 +299,31 @@ function App() {
             </div>
 
             <div className="art-card">
-              <h3>The Fathomless Ward</h3>
-              <img src="/portfolio/card-holder.jpeg" alt="Brass card holder"/>
+              <h3>The Coral Bauble</h3>
+              <img src="/portfolio/gemstone-signet-ring.jpeg" alt="Silver signet ring with pink rock"/>
               <p>
-                I wanted to make a special card holder for a <a href='https://magic.wizards.com/en/formats/commander'>MTG commander</a>, so I made this. 
-                It works as intended and it is pretty nice.
+                For Christmas, I made my mother a silver signet ring with a pink gemstone bezel set on top. 
+                Personally, I think this thing looks fantastic.
+              </p>
+            </div>
+
+            <div className="art-card">
+              <h3>The Fallen Watcher</h3>
+              <img src="/portfolio/tree-bookmarkFRONT.jpeg" alt="Bent copper bookmark"/>
+              <img src='/portfolio/tree-bookmarkABOVE.jpg' alt='Skeleton under a tree'/>
+              <p>
+                A bent copper bookmark showing a skeleton staring at a bee nest on a tree.
+                Texturing plays a major role, emphasizing the depth of the shapes and the scene’s mood.
+              </p>
+            </div>
+
+            <div className="art-card">
+              <h3>The Trembling Shruber</h3>
+              <img src="/portfolio/frog-keychain.jpeg" alt="Brass frog keychain"/>
+              <p>
+                A frog-shaped textured brass keychain inspired by 
+                <a href="/portfolio/frog-inspiration.jpg" target="_blank"> this photo</a>.
+                My very first project — and still one of the coolest to me.
               </p>
             </div>
 
@@ -360,16 +358,16 @@ function App() {
             </div>
 
             <div className="art-card">
-              <h3>The Coral Bauble</h3>
-              <img src="/portfolio/gemstone-signet-ring.jpeg" alt="Silver signet ring with pink rock"/>
+              <h3>The Fathomless Ward</h3>
+              <img src="/portfolio/card-holder.jpeg" alt="Brass card holder"/>
               <p>
-                For Christmas, I made my mother a silver signet ring with a pink gemstone bezel set on top. 
-                Personally, I think this thing looks fantastic.
+                I wanted to make a special card holder for a <a href='https://magic.wizards.com/en/formats/commander'>MTG commander</a>, so I made this. 
+                It works as intended and it is pretty nice.
               </p>
             </div>
 
             <div className="art-card">
-              <h3>The __ __</h3>
+              <h3>The Sterling Lagomorph</h3>
               <img src="/portfolio/silver-bunny-castL.jpeg" alt="Small silver bunny"/>
               <img src="/portfolio/silver-bunny-castSIDE.jpeg" alt="Small silver bunny"/>
               <p>
@@ -378,20 +376,28 @@ function App() {
             </div>
 
             <div className="art-card">
-              <h3>The __ __</h3>
-              <img src="/portfolio/dainty-ring.jpeg" alt="Thin brass ring"/>
+              <h3>The Revolving Aureole</h3>
+              <img src="/portfolio/spinning-ringOPEN.jpeg" alt="A spinning perfection of craft, in full form"/>
+              <img src="/portfolio/spinning-ringREST.jpeg" alt="A spinning perfection of craft, spinning"/>
+              <img src="/portfolio/spinning-ringSIT.jpeg" alt="A spinning perfection of craft, on the ground"/>
+              <img src="/portfolio/spinning-ringSTAND.jpeg" alt="A spinning perfection of craft, standing"/>
               <p>
-                Multiple people asked me for a small dainty ring made out of brass, so I made a few.
-                They don't take long to make, but they are very low quality. Brass is not a great material, unfortunately.
+                I wanted to make this, because I thought it would be epic. I wanted to have something to play with in class, because class can be boring, and spinning rings are fun. 
+                I was sort of inspired by the <a href='/portfolio/time-turner-inspiration.webp'>time turner</a> from <em>Harry Potter</em>, but I did come up with most of this on my own.
+                It was my idea and my work that made it come to reality.
               </p>
             </div>
 
             <div className="art-card">
-              <h3>The __ __</h3>
-              <img src="/portfolio/dainty-ring.jpeg" alt="Thin brass ring"/>
+              <h3>The Crimson Poltroon</h3>
+              <img src="/portfolio/silver-chicken-ringFRONT.jpeg" alt="Large chicken ring with ruby set, front view"/>
+              <img src="/portfolio/silver-chicken-ringL.jpeg" alt="Large chicken ring with ruby set, left view"/>
+              <img src="/portfolio/silver-chicken-ringR.jpeg" alt="Large chicken ring with ruby set, right view"/>
+              <img src="/portfolio/silver-chicken-ringSIDE.jpeg" alt="Large chicken ring with ruby set, side view"/>
               <p>
-                Multiple people asked me for a small dainty ring made out of brass, so I made a few.
-                They don't take long to make, but they are very low quality. Brass is not a great material, unfortunately.
+                For my grandmother, I made a silver chicken ring with a ruby in a prong setting. She loves chickens so I made the entire ring into a chicken sitting on your finger.
+                In front and behing the chicken are two roses, because they are my grandmother's favortite flower. Her birthstone is a ruby, so there is a large ruby prong set in the center of the chicken.
+                This was a very fun project, and carved out of hard wax. It taught me patience and how to carve hard wax. I like the way it turned out, but many people could not recognize it as a chicken.
               </p>
             </div>
 
