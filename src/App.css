@@ -167,6 +167,35 @@ a:hover {
 }
 /* === END GALLERY === */
 
+.code-gallery {
+  column-count: 2; /* adjust for your layout */
+  column-gap: 2rem;
+  padding: 2rem;
+  width: 90%;
+  max-width: 1200px;
+}
+.embed-card {
+  display: inline-block;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 2rem;
+  background-color: white;
+  border: 2px solid var(--navy);
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+.embed-card:hover {
+  transform: translateY(-5px);
+}
+.embed-card h3 {
+  color: var(--forest);
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
 /* ===== ABOUT PAGE ===== */
 .hobby {
   background-color: var(--bg-light);
@@ -196,16 +225,6 @@ a:hover {
   border-radius: 10px;
   border: 3px solid var(--brown);
 }
-
-/* ===== EMBEDDED SKETCH PREVIEWS ===== */
-.embed-preview {
-  width: 100%;
-  height: 320px;
-  border: 2px solid var(--navy);
-  border-radius: 8px;
-  margin-top: 1rem;
-}
-
 
 .text-muted {
   color: gray;

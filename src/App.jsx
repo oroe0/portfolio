@@ -40,7 +40,7 @@ function App() {
     return (
       <>
         <Header title='Owen Roe' 
-          subtitle='This is a test site, as I am learning. Learn more about my work and me below.'
+          subtitle='This website is a portfolio made to display my projects and demonstrate my skills.'
         />
           
         <div className="nav">
@@ -52,13 +52,16 @@ function App() {
             <h2>My Projects</h2>
             <ul className="link-list">
               <li>
-                <span>Programs:</span> <PageButton href={Programs} content="Click" />
+                <span>Programing Creations:</span> <PageButton href={Programs} content="Click" />
               </li>
               <li>
-                <span>Art:</span> <PageButton href={Art} content="Click" />
+                <span>Engineering Potfolio:</span> <a href='https://sites.google.com/punahou.edu/owen-engineering-portfolio/home'><button>Click</button></a>
               </li>
               <li>
-                <span>Other:</span> <PageButton href={Other} content="Click" />
+                <span>Art Projects:</span> <PageButton href={Art} content="Click" />
+              </li>
+              <li>
+                <span>Other Stuff:</span> <span className="text-muted">Coming soon</span>
               </li>
             </ul>
           </section>
@@ -69,11 +72,12 @@ function App() {
     )
   }
 
+
   function Programs() {
     return (
       <>
         <Header title='Coding Projects' 
-          subtitle='This page is dedicated to coding projects I’ve created in different languages. Many are games and most are half finished.'
+          subtitle='This page is dedicated to coding projects I’ve created in different languages and for different things. Many are games and most are half finished.'
         />
   
         <div className="nav">
@@ -82,14 +86,17 @@ function App() {
   
         <main>
           <section>
-            <h2>Different Languages</h2>
+            <h2>Different Projects</h2>
   
             <ul className="link-list">
               <li>
                 p5.js: <PageButton href={P5Projects} content="Click" />
               </li>
               <li>
-                Python: <a href="python.html" className="text-link">Click</a>
+                Python: <PageButton href={Python} content="Click" />
+              </li>
+              <li>
+                Game Jams: <PageButton href={GameJams} content="Click" />
               </li>
               <li>
                 Other: <span className="text-muted">Coming soon</span>
@@ -119,45 +126,52 @@ function App() {
         </div>
   
         <main>
-          <div className="gallery">
+          <div className="code-gallery">
   
-            <div className="art-card">
-              <h3 className="art-title">The Floating Line</h3>
+            <div className="embed-card">
+              <h3>The Geometry Game</h3>
               <p>
-                A line that moves like a wave, constantly shifting shape and amplitude.
-                A simple introduction to sine motion and noise-driven randomness.
+                This is based on constructions you might do in geometry. This is a very good game, as it allows for lots of fun things. 
+                It has an infitely large worspace, and can actually handle large numbers of points, just don't go too far with it.
+                <br />
+                CIRCLE TOOL: Click on one point to set the center of the circle, then click on another to set the radius. <br />
+                LINE TOOL: Connect two points with a line. <br />
+                REMOVE CIRCLES: Remove all the circles attached to one point. <br />
+                REMOVE POINT: Delete a point, also removes all circles and lines attached to that point. <br />
+                CREATE POINT: Creates a point wherever you click. <br />
+
+                WASD to move, and have fun!
               </p>
-              <iframe
-                src="/portfolio/floating-line.html"
-                title="Floating Line"
-                className="embed-preview"
-              />
+              <iframe src="https://editor.p5js.org/oroe28/full/1BuF1XlF8" width="400" height="442"></iframe>
             </div>
   
-            <div className="art-card">
-              <h3 className="art-title">Rainbow Runner</h3>
+            <div className="embed-card">
+              <h3>Casino</h3>
               <p>
-                A colorful trail that follows the mouse, fading and morphing over time.
-                Focuses on gradual transparency and continuous drawing.
+                I made a half finished casino game. It currently has fully functional black jack and loans. 
+                You can change your bet amount, and change what kind of loans you get, but they do not have good interest rates.
+                Black jack is missing a few features, such as splitting, but other than that it works wondefully.
+                There are also random encounters, which can give you special rewards.
               </p>
-              <iframe
-                src="/portfolio/rainbow-runner.html"
-                title="Rainbow Runner"
-                className="embed-preview"
-              />
+              <iframe src="https://editor.p5js.org/oroe28/full/bcexsFo2E" width="400" height="442"></iframe>
             </div>
   
-            <div className="art-card">
-              <h3 className="art-title">Gravity Drop</h3>
+            <div className="embed-card">
+              <h3>Connect Four</h3>
               <p>
-                A physics-based simulation of falling circles affected by gravity and collision.
-                It’s chaotic — but strangely satisfying.
+                The classic connect four experience, except there is no win detection.
+                I will add this soon, because I should know how to do that.
               </p>
-              <iframe
-                src="/portfolio/gravity-drop.html"
-                title="Gravity Drop"
-                className="embed-preview"
-              />
+              <iframe src="https://editor.p5js.org/oroe28/full/yvzwCrSN4" width="350" height="342"></iframe>
+            </div>
+
+            <div className='embed-card'>
+              <h3>Wireframe 3D Rendering</h3>
+              <p>
+                This was just another attempt to render 3d objects. any object that is behind you still gets rendered because of how negative values are handled.
+                This is probably better than my python versions, but it still is not good.
+              </p>
+              <iframe src="https://editor.p5js.org/oroe28/full/-OjU3K0fw" width="400" height="442"></iframe>
             </div>
   
           </div>
@@ -168,11 +182,137 @@ function App() {
     )
   }
 
+  function Python() {
+    return(
+      <>
+        <Header title='Python Programs'
+          subtitle='This page contains a few python programs I wrote. I am not very good at python, but I might learn more in the future.'
+        />
+
+        <div className="nav">
+          <PageButton href={Home} content="← Back to Home" />
+        </div>
+
+        <div className="nav">
+          <PageButton href={Programs} content="← Back to Coding Projects" />
+        </div>
+
+        <main>
+          <div className="code-gallery">
+  
+            <div className="embed-card">
+              <h3>Slimer</h3>
+              <p>
+                This is an attempt at a 2D clone of slime rancher. I wanted to make a game where everything was a box in an array, and I think it works.
+                I do believe it is very unoptimized, but that is okay. It is pretty cool I think, but a bit boring. Move with WASD, start vacuuming with V, stop with B.
+              </p>
+              <iframe src="https://trinket.io/embed/python/f55a8f96da76?outputOnly=true&runOption=run&showInstructions=true" width="402" height="435" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+            </div>
+
+            <div className="embed-card">
+              <h3>Rendering System</h3>
+              <p>
+                I wanted to make a 3D rendering system, without the knowledge of the math and stuff required. 
+                Because I did not know how to make it well, I tried to simplify it, and make the map 2D, but look 3D. 
+                This was one of many attempts to do this, but the walls always curved and looked wierd.
+                Despite how bad this looks, I believe this is the best one I made.
+                <br></br>
+                Move with WASD, look with arrow keys.
+              </p>
+              <iframe src="https://trinket.io/embed/python/e5137b465e?outputOnly=true&runOption=run&showInstructions=true" width="402" height="435" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+            </div>
+
+            <div className="embed-card">
+              <h3>Array Testing</h3>
+              <p>
+                I wanted to find a way to make a bunch of words out of letters and was playing around with arrays. It did not end up working.
+                The program is way too slow and thus cannot get to 5 letter words.
+              </p>
+              <iframe src="https://trinket.io/embed/python/1d9d939cc790?toggleCode=true&runOption=run&showInstructions=true" width="402" height="435" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+            </div>
+
+            <div className="embed-card">
+              <h3>Dungeon Maker</h3>
+              <p>
+                This is a dungeon genertator that I made, but it does not work well, in fact, it goes on forever. Best not to run it I think.
+                It was fun to make, and I love the concept, but it goes over itself and because it repeats forever, it just is no fun.
+              </p>
+              <iframe src="https://trinket.io/embed/python/e08f9eee622a?outputOnly=true&runOption=run&showInstructions=true" width="402" height="435" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+            </div>
+
+          </div>
+        </main>
+
+        <Footer />
+
+      </>
+    )
+  }
+
+  function GameJams() {
+    return(
+      <>
+        <Header title='Game Jams'
+          subtitle='This page has the game jams that I particpated in. I have done game jams in various softwares. '
+        />
+
+        <div className="nav">
+          <PageButton href={Home} content="← Back to Home" />
+        </div>
+
+        <div className="nav">
+          <PageButton href={Programs} content="← Back to Coding Projects" />
+        </div>
+
+        <main>
+          <div className="code-gallery">
+            <div className='embed-card'>
+              <h3>High School Game Jam</h3>
+              <p>
+                This was the first game jam that I ever did. Our team made the project in Unity, but we had some issues with the submission. 
+                In the end, it was fine and I learned a lot from this experience. It taught me how to be a better programmer and how to work under pressure. 
+                I knew that I would be unable to make the project as well as I wanted, but it was okay. We ended up with a gameboard type game that was not too bad.
+                We uploaded the project to itch <a href='https://lbaldwin26.itch.io/minute-party' target='_blank'>here</a>.
+              </p>
+            </div>
+
+            <div className='embed-card'>
+              <h3>Ultimate Mini Golf Game Jam</h3>
+              <p>
+                This was a fun game jam I did using 8th Wall. I had very little experience with 8th Wall in the past, so this allowed me to truly understand how to use it and helped improve my skills a lot.
+                We made two minigolf holes for this game jam, one was more professional, and one was all about the theming. It was quite enjoyable. 
+                You can play both at <a href='https://neals.8thwall.app/golf-for-money' target='_blank'>this website</a>.
+                The first 2 holes were not created by us, but the last 2 were.
+              </p>
+            </div>
+
+            <div className='embed-card'>
+              <h3>Garfield Goobers</h3>
+              <p>
+                The 'Enehana Computer Science Club ran a game jam. For our game, we made a platformer where you have to avoid cannon balls and spike as a beach ball to collect a key. 
+                If you can survive to unlock the treasure chest, then you become a rocket, and must avoid the octo-guards in the cave blocking the ending.
+                You can play the game at <a href='https://8th.io/46krt' target='_blank'>this website</a>.
+                The slideshow we presented is attached <a  href='/portfolio/garfield-goobers.pdf' target='_blank'>here</a>.
+                <br />
+                Our team was the Garfield Goobers and we won first place in this game jam.
+              </p>
+
+            </div>
+          </div>
+        </main>
+
+        <Footer />
+
+      </>
+    )
+  }
+
+
   function About() {
     return (
       <>
         <Header title='About Me' 
-          subtitle='This website is a portfolio made to display my projects and demonstrate my skills.'
+          subtitle='This shows some of the other things I do and enjoy.'
         />
   
         <div className="nav">
@@ -180,43 +320,41 @@ function App() {
         </div>
   
         <main>
-          <section>
+          <div>
             <h2>Hobbies</h2>
   
             <div className="hobby">
               <h3>Coding</h3>
               <p>
-                I can code in Python and JavaScript, and I’m learning C# and HTML.
-                I love building small projects, even when they don’t always work perfectly.
-              </p>
-            </div>
-  
-            <div className="hobby">
-              <h3>Reading</h3>
-              <p>
-                I enjoy reading across genres — though I’ll admit, I haven’t finished every book I’ve started.
+                I can code in Python, JavaScript, and React. I am working on many projects and am always trying to get better at coding.
               </p>
             </div>
   
             <div className="hobby">
               <h3>Games</h3>
               <p>
-                I love playing games like <em>Hollow Knight</em> and <em>Silksong</em>.
-                I’m not great at them, but I love their design and atmosphere.
+                I love playing video games like <em>Hollow Knight</em> and <em>Silksong</em>. However, I don't usually have time to play them.
               </p>
             </div>
   
             <div className="hobby">
               <h3>Jewelry</h3>
               <p>
-                I make jewelry and metalwork, often combining natural textures and personal symbolism.
+                I make jewelry and metalwork, often trying to make more practical things. I also love little mechanical creations, hinges and stuff.
               </p>
             </div>
-          </section>
+
+            <div className='hobby'>
+              <h3>MTG</h3>
+              <p>
+                I love to play Magic: The Gathering and I have a large collection. I enjoy commander the most, because it is the easiest format for me.
+              </p>
+            </div>
+          </div>
   
           <section>
             <h2>Dogs</h2>
-            <p>I have two wonderful dogs — Cleo and Tucker. They inspire many of my works.</p>
+            <p>I have two wonderful dogs, Cleo and Tucker. They inspire many of my works and help me relax after school.</p>
             <div className="dog-gallery">
               <img src="/portfolio/cleo.jpeg" alt="Cleo" className="dog-img" />
               <img src="/portfolio/tucker.jpeg" alt="Tucker" className="dog-img" />
@@ -361,7 +499,7 @@ function App() {
               <h3>The Fathomless Ward</h3>
               <img src="/portfolio/card-holder.jpeg" alt="Brass card holder"/>
               <p>
-                I wanted to make a special card holder for a <a href='https://magic.wizards.com/en/formats/commander'>MTG commander</a>, so I made this. 
+                I wanted to make a special card holder for a <a href='https://magic.wizards.com/en/formats/commander' target="_blank">MTG commander</a>, so I made this. 
                 It works as intended and it is pretty nice.
               </p>
             </div>
@@ -383,7 +521,7 @@ function App() {
               <img src="/portfolio/spinning-ringSTAND.jpeg" alt="A spinning perfection of craft, standing"/>
               <p>
                 I wanted to make this, because I thought it would be epic. I wanted to have something to play with in class, because class can be boring, and spinning rings are fun. 
-                I was sort of inspired by the <a href='/portfolio/time-turner-inspiration.webp'>time turner</a> from <em>Harry Potter</em>, but I did come up with most of this on my own.
+                I was sort of inspired by the <a href='/portfolio/time-turner-inspiration.webp' target="_blank">time turner</a> from <em>Harry Potter</em>, but I did come up with most of this on my own.
                 It was my idea and my work that made it come to reality.
               </p>
             </div>
@@ -426,18 +564,18 @@ function App() {
           <div className="gallery">
   
             <div className="art-card">
-              <h3>Python Text Adventure</h3>
+              <h3>Placeholder card</h3>
               <p>
                 A small command-line game where you navigate a haunted mansion, 
                 collect items, and escape through hidden passages.
               </p>
               <a href="https://github.com/yourusername/text-adventure" target="_blank">
-                View Code
+                View
               </a>
             </div>
   
             <div className="art-card">
-              <h3>Java Calculator</h3>
+              <h3>Placeholder</h3>
               <p>
                 A simple calculator app built in Java with Swing. 
                 Supports basic operations and a clean, minimal UI.
@@ -448,7 +586,7 @@ function App() {
             </div>
   
             <div className="art-card">
-              <h3>Pixel Pattern Generator</h3>
+              <h3>Why are you still here?</h3>
               <p>
                 A mini tool that generates random pixel patterns using RGB noise. 
                 It’s oddly mesmerizing to watch in action.
