@@ -99,6 +99,9 @@ function App() {
                 Game Jams: <PageButton href={GameJams} content="Click" />
               </li>
               <li>
+                MTOT: <PageButton href={MTOT} content="Click" />
+              </li>
+              <li>
                 Other: <span className="text-muted">Coming soon</span>
               </li>
             </ul>
@@ -307,6 +310,31 @@ function App() {
     )
   }
 
+  function MTOT() {
+    return (
+      <>
+        <Header title="The Mock Trial Online Trainer" 
+          subtitle='The MTOT was a project I worked on for a long time, and it turned out very nice.' 
+        />
+
+        <div className="nav">
+          <PageButton href={Home} content="← Back to Home" />
+        </div>
+
+        <div className="nav">
+          <PageButton href={Programs} content="← Back to Coding Projects" />
+        </div>
+
+        <main>
+
+        </main>
+
+        <Footer />
+
+      </>
+    )
+  }
+
 
   function About() {
     return (
@@ -320,7 +348,7 @@ function App() {
         </div>
   
         <main>
-          <div>
+          <section>
             <h2>Hobbies</h2>
   
             <div className="hobby">
@@ -350,7 +378,7 @@ function App() {
                 I love to play Magic: The Gathering and I have a large collection. I enjoy commander the most, because it is the easiest format for me.
               </p>
             </div>
-          </div>
+          </section>
   
           <section>
             <h2>Dogs</h2>
