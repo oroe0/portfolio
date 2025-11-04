@@ -35,6 +35,17 @@ function App() {
     )
   }
 
+  function SubHeader({ title, subtitle = '' }) {
+    return (
+      <>
+        <div className='sub-header'>
+          <h1 className='title'>{title}</h1>
+          <p className='subtitle'>{subtitle}</p>
+        </div>
+      </>
+    )
+  }
+
 
   function Home() {
     return (
@@ -52,13 +63,16 @@ function App() {
             <h2>My Projects</h2>
             <ul className="link-list">
               <li>
-                <span>Programing Creations:</span> <PageButton href={Programs} content="Click" />
+                <PageButton href={BigProjects} content="Big Projects" />
               </li>
               <li>
-                <span>Engineering Potfolio:</span> <a href='https://sites.google.com/punahou.edu/owen-engineering-portfolio/home'><button>Click</button></a>
+                <PageButton href={Programs} content="Programing Creations" />
               </li>
               <li>
-                <span>Art Projects:</span> <PageButton href={Art} content="Click" />
+                <a href='https://sites.google.com/punahou.edu/owen-engineering-portfolio/home'><button>Engineering Portfolio</button></a>
+              </li>
+              <li>
+                <PageButton href={Art} content="Art Projects" />
               </li>
               <li>
                 <span>Other Stuff:</span> <span className="text-muted">Coming soon</span>
@@ -74,39 +88,37 @@ function App() {
 
 
   function Programs() {
+    const [SubPage, setSubPage] = useState(() => GameJams)
+    function SubPageButton({ content, href }) {
+      return (
+        <>
+          <button onClick={() => setSubPage(() => href)}>{content}</button>
+        </>
+      )
+    }
+
     return (
       <>
         <Header title='Coding Projects' 
           subtitle='This page is dedicated to coding projects I’ve created in different languages and for different things. Many are games and most are half finished.'
         />
   
-        <div className="nav">
-          <PageButton href={Home} content="← Back to Home" />
+        
+        <div className='sub-nav-bg'>
+          <div className="nav">
+            <PageButton href={Home} content="← Back to Home" />
+          </div>
+          <div className='sub-nav'>
+            <SubPageButton href={P5Projects} content="p5.js" />
+            <SubPageButton href={Python} content="Python" />
+            <SubPageButton href={GameJams} content="Game Jams" />
+          </div>
         </div>
-  
-        <main>
-          <section>
-            <h2>Different Projects</h2>
-  
-            <ul className="link-list">
-              <li>
-                p5.js: <PageButton href={P5Projects} content="Click" />
-              </li>
-              <li>
-                Python: <PageButton href={Python} content="Click" />
-              </li>
-              <li>
-                Game Jams: <PageButton href={GameJams} content="Click" />
-              </li>
-              <li>
-                MTOT: <PageButton href={MTOT} content="Click" />
-              </li>
-              <li>
-                Other: <span className="text-muted">Coming soon</span>
-              </li>
-            </ul>
-          </section>
-        </main>
+        
+
+        <span>
+          <SubPage />
+        </span>
   
         <Footer />
       </>
@@ -116,18 +128,10 @@ function App() {
   function P5Projects() {
     return (
       <>
-        <Header title='p5.js Projects' 
+        <SubHeader title='p5.js Projects' 
           subtitle='These are some interactive programs I’ve made using the p5.js library, mostly experiments or assignments for class.'
         />
-  
-        <div className="nav">
-          <PageButton href={Home} content="← Back to Home" />
-        </div>
 
-        <div className="nav">
-          <PageButton href={Programs} content="← Back to Coding Projects" />
-        </div>
-  
         <main>
           <div className="code-gallery">
   
@@ -179,8 +183,6 @@ function App() {
   
           </div>
         </main>
-  
-        <Footer />
       </>
     )
   }
@@ -188,17 +190,9 @@ function App() {
   function Python() {
     return(
       <>
-        <Header title='Python Programs'
+        <SubHeader title='Python Programs'
           subtitle='This page contains a few python programs I wrote. I am not very good at python, but I might learn more in the future.'
         />
-
-        <div className="nav">
-          <PageButton href={Home} content="← Back to Home" />
-        </div>
-
-        <div className="nav">
-          <PageButton href={Programs} content="← Back to Coding Projects" />
-        </div>
 
         <main>
           <div className="code-gallery">
@@ -245,9 +239,6 @@ function App() {
 
           </div>
         </main>
-
-        <Footer />
-
       </>
     )
   }
@@ -255,17 +246,9 @@ function App() {
   function GameJams() {
     return(
       <>
-        <Header title='Game Jams'
+        <SubHeader title='Game Jams'
           subtitle='This page has the game jams that I particpated in. I have done game jams in various softwares. '
         />
-
-        <div className="nav">
-          <PageButton href={Home} content="← Back to Home" />
-        </div>
-
-        <div className="nav">
-          <PageButton href={Programs} content="← Back to Coding Projects" />
-        </div>
 
         <main>
           <div className="code-gallery">
@@ -303,7 +286,43 @@ function App() {
             </div>
           </div>
         </main>
+      </>
+    )
+  }
 
+
+  function BigProjects() {
+    const [SubPage, setSubPage] = useState(() => MTOT)
+    function SubPageButton({ content, href }) {
+      return (
+        <>
+          <button onClick={() => setSubPage(() => href)}>{content}</button>
+        </>
+      )
+    }
+
+
+    return (
+      <>
+        <Header title='Larger Projects' 
+          subtitle='This page is dedicated to some of the big projects I’ve dedicated a lot of time to. These are much more polished projects that I really love.'
+        />
+
+        <div className='sub-nav-bg'>
+          <div className="nav">
+            <PageButton href={Home} content="← Back to Home" />
+          </div>
+          <div className='sub-nav'>
+            <SubPageButton href={MTOT} content="The Mock Trial Online Trainer" />
+            <button>Coming Soon</button>
+          </div>
+        </div>
+        
+
+        <span>
+          <SubPage />
+        </span>
+  
         <Footer />
 
       </>
@@ -313,24 +332,57 @@ function App() {
   function MTOT() {
     return (
       <>
-        <Header title="The Mock Trial Online Trainer" 
-          subtitle='The MTOT was a project I worked on for a long time, and it turned out very nice.' 
+        <SubHeader title="The Mock Trial Online Trainer" 
+          subtitle='The Mock Trial Online Trainer (MTOT) was a project I worked on for a long time, and it turned out very nice.' 
         />
-
-        <div className="nav">
-          <PageButton href={Home} content="← Back to Home" />
-        </div>
-
-        <div className="nav">
-          <PageButton href={Programs} content="← Back to Coding Projects" />
-        </div>
+        
+        <h1 style={{width: "100%", marginTop: "4rem", textAlign: "center"}}><a href='https://mtot-five.vercel.app' target='_blank'>The MTOT is currently available</a></h1>
+        
 
         <main>
+          <div>
+            <section>
+              <h2>Learning</h2>
+              <p>
+                From the MTOT, I learned a lot about app creation. 
+                I learned how to use API calls and manage API keys, because I implemented multiple other tools into the MTOT. 
+                These tools included authentication with <a href='https://firebase.google.com/'>Google Firebase</a>, data storage with <a href='https://www.mongodb.com/'>MongoDB</a>, and AI responses with <a href='>https://groq.com/'>Groq</a>. 
+                In addition to these tools, I had to host the website. 
+                Because the MTOT uses API calls, it is not a static site, so it cannot be hosted on GitHub pages, which was the main way I hosted my websites in the past. 
+                In order to host the MTOT, I used <a href='https://vercel.com/'>Vercel</a>, which is a free web hosting server.
+              </p>
+            </section>
+
+            <section>
+              <h2>Challenges</h2>
+              <p>
+                I faced many challenges while creating this app, but I was able to persevere 
+              </p>
+            </section>
+          </div>
+          <div>
+            <section>
+              <h2>Reasons for the MTOT</h2>
+              <p>
+                I wanted to make this app for many different reasons, but mainly to help my club. 
+                When I created the MTOT, I was a captain of the Punahou Mock Trial team, and I saw that our team had a lack of resources for improving their skills. 
+                It is for this reason that I made the MTOT, to help our team improve and win states. I saw the key issues that we were struggling with, and made sure that they were incorporated into the app.
+              </p>
+            </section>
+            <section>
+              <h2>Submissions</h2>
+              <p>
+                I submitted the MTOT to multiple different competitions, including the Congressional App Challenge and the National STEM Festival. 
+                I originally designed the MTOT just to have fun, to learn, and to help my club, but I realized that with this very polished app, it would be a great opportunity to submit it into many different competitions. 
+                h
+              </p>
+
+            </section>
+          </div>
+          
+          
 
         </main>
-
-        <Footer />
-
       </>
     )
   }
@@ -504,7 +556,7 @@ function App() {
             </div>
 
             <div className="art-card">
-              <h3>The Anamnestic Anamnestic</h3>
+              <h3>The Anamnestic Arbol</h3>
               <img src="/portfolio/tree-clockABOVE.jpeg" alt="Bronze clock falling on tree"/>
               <img src="/portfolio/tree-clockFRONT.jpeg" alt="Bronze tree stretching branches"/>
               <p>
