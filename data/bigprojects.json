@@ -1,0 +1,26 @@
+[
+  {
+    "id": "mtot",
+    "title": "The Mock Trial Online Trainer",
+    "subtitle": "The Mock Trial Online Trainer (MTOT) was a project I worked on for a long time, and it turned out very nice.",
+    "liveUrl": "https://mtot-five.vercel.app",
+    "sections": [
+      {
+        "heading": "Learning",
+        "content": "From the MTOT, I learned a lot about app creation. I learned how to use API calls and manage API keys, because I implemented multiple tools including authentication with <a href='https://firebase.google.com/'>Google Firebase</a>, data storage with <a href='https://www.mongodb.com/'>MongoDB</a>, and AI responses with <a href='https://groq.com/'>Groq</a>. I also had to host the website on <a href='https://vercel.com/'>Vercel</a>, since it uses API calls and can't be deployed as a static site."
+      },
+      {
+        "heading": "Challenges",
+        "content": "I faced many challenges while creating this app, but I was able to persevere."
+      },
+      {
+        "heading": "Reasons for the MTOT",
+        "content": "I wanted to make this app mainly to help my club. When I created the MTOT, I was a captain of the Punahou Mock Trial team, and I saw that our team had a lack of resources for improving their skills. I made the MTOT to help our team improve and win states, incorporating the key issues we were struggling with."
+      },
+      {
+        "heading": "Submissions",
+        "content": "I submitted the MTOT to multiple competitions, including the Congressional App Challenge and the National STEM Festival. I originally designed it just to have fun, to learn, and to help my club, but I realized that with this very polished app, it would be a great opportunity to enter competitions."
+      }
+    ]
+  }
+]

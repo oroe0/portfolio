@@ -1,0 +1,34 @@
+[
+  {
+    "id": "slimer",
+    "title": "Slimer",
+    "embedSrc": "https://trinket.io/embed/python/f55a8f96da76?outputOnly=true&runOption=run&showInstructions=true",
+    "embedWidth": 402,
+    "embedHeight": 435,
+    "description": "An attempt at a 2D clone of Slime Rancher where everything is a box in an array. I believe it is very unoptimized, but that is okay. It is pretty cool I think, but a bit boring. Move with WASD, start vacuuming with V, stop with B."
+  },
+  {
+    "id": "rendering-system",
+    "title": "Rendering System",
+    "embedSrc": "https://trinket.io/embed/python/e5137b465e?outputOnly=true&runOption=run&showInstructions=true",
+    "embedWidth": 402,
+    "embedHeight": 435,
+    "description": "I wanted to make a 3D rendering system without the knowledge of the math required. I tried to simplify it by making the map 2D but look 3D. This was one of many attempts, but the walls always curved and looked weird. Despite how bad this looks, I believe this is the best one I made. Move with WASD, look with arrow keys."
+  },
+  {
+    "id": "array-testing",
+    "title": "Array Testing",
+    "embedSrc": "https://trinket.io/embed/python/1d9d939cc790?toggleCode=true&runOption=run&showInstructions=true",
+    "embedWidth": 402,
+    "embedHeight": 435,
+    "description": "I wanted to find a way to make a bunch of words out of letters and was playing around with arrays. It did not end up working. The program is way too slow and thus cannot get to 5-letter words."
+  },
+  {
+    "id": "dungeon-maker",
+    "title": "Dungeon Maker",
+    "embedSrc": "https://trinket.io/embed/python/e08f9eee622a?outputOnly=true&runOption=run&showInstructions=true",
+    "embedWidth": 402,
+    "embedHeight": 435,
+    "description": "A dungeon generator that does not work well — in fact, it goes on forever. Best not to run it. It was fun to make and I love the concept, but it goes over itself and because it repeats forever, it just is no fun."
+  }
+]
