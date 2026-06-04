@@ -1,0 +1,36 @@
+{
+  "hobbies": [
+    {
+      "id": "coding",
+      "title": "Coding",
+      "description": "I can code in Python, JavaScript, and React. I am working on many projects and am always trying to get better at coding."
+    },
+    {
+      "id": "games",
+      "title": "Games",
+      "description": "I love playing video games like <em>Hollow Knight</em> and <em>Silksong</em>. However, I don't usually have time to play them."
+    },
+    {
+      "id": "jewelry",
+      "title": "Jewelry",
+      "description": "I make jewelry and metalwork, often trying to make more practical things. I also love little mechanical creations, hinges and stuff."
+    },
+    {
+      "id": "mtg",
+      "title": "MTG",
+      "description": "I love to play Magic: The Gathering and I have a large collection. I enjoy commander the most, because it is the easiest format for me."
+    }
+  ],
+  "dogs": [
+    {
+      "name": "Cleo",
+      "src": "/portfolio/cleo.jpeg",
+      "alt": "Cleo"
+    },
+    {
+      "name": "Tucker",
+      "src": "/portfolio/tucker.jpeg",
+      "alt": "Tucker"
+    }
+  ]
+}

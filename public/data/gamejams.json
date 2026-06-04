@@ -1,0 +1,28 @@
+[
+  {
+    "id": "high-school-game-jam",
+    "title": "High School Game Jam",
+    "links": [
+      { "label": "View on itch.io", "href": "https://lbaldwin26.itch.io/minute-party", "external": true }
+    ],
+    "description": "This was the first game jam I ever did. Our team made the project in Unity, but we had some issues with the submission. In the end, it was fine and I learned a lot from this experience. It taught me how to be a better programmer and how to work under pressure. I knew I would be unable to make the project as well as I wanted, but it was okay. We ended up with a gameboard type game that was not too bad."
+  },
+  {
+    "id": "mini-golf-jam",
+    "title": "Ultimate Mini Golf Game Jam",
+    "links": [
+      { "label": "Play the game", "href": "https://neals.8thwall.app/golf-for-money", "external": true }
+    ],
+    "description": "A fun game jam using 8th Wall. I had very little experience with 8th Wall in the past, so this allowed me to truly understand how to use it and helped improve my skills a lot. We made two minigolf holes — one more professional, one all about the theming. The first 2 holes were not created by us, but the last 2 were."
+  },
+  {
+    "id": "garfield-goobers",
+    "title": "Garfield Goobers",
+    "links": [
+      { "label": "Play the game", "href": "https://8th.io/46krt", "external": true },
+      { "label": "View slideshow", "href": "/portfolio/garfield-goobers.pdf", "external": true }
+    ],
+    "badge": "🏆 1st Place",
+    "description": "The 'Enehana Computer Science Club ran a game jam. We made a platformer where you avoid cannonballs and spikes as a beach ball to collect a key. If you survive to unlock the treasure chest, you become a rocket and must avoid octo-guards in a cave blocking the ending. Our team was the Garfield Goobers and we won first place."
+  }
+]
