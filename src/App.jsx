@@ -5,7 +5,7 @@ import './App.css'
 function useJson(path) {
   const [data, setData] = useState(null)
   useEffect(() => {
-    fetch(path)
+    fetch(import.meta.env.BASE_URL + path.replace(/^\//, ''))
       .then(r => r.json())
       .then(setData)
       .catch(err => console.error(`Failed to load ${path}:`, err))
