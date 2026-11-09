@@ -1,51 +1,83 @@
 [
   {
-    "id": "argent-shaker",
-    "title": "The Argent Shaker",
+    "id": "adherent-shruber",
+    "title": "The Adherent Shruber",
     "images": [
-      { "src": "/portfolio/silver-bowl-prong-ring.jpeg", "alt": "Prong setting ring" }
+      { "src": "/portfolio/frog-keychain.jpeg", "alt": "Brass frog keychain" },
+      { "src": "/portfolio/frog-inspiration.jpg", "alt": "Inspiration frog" },
+      { "src": "/portfolio/frog-keychain-sketch.jpeg", "alt": "Sketch" }
     ],
-    "description": "A thick, rounded silver lava rock ring with a loose prong setting — the rock shakes when moved. Inspired by <a href='/portfolio/HK-inspiration.webp' target='_blank'>the horns</a> visible in the final bossfight of <em>Hollow Knight</em>."
+    "description": "This is a frog-shaped textured brass keychain inspired by the photo above. It was my very first project that I made in jewelry. I still like it a lot, though I realize that I should have been more precise making it at the time. Somehow the branches on either side of the frog do not actually aline."
+  },
+  {
+    "id": "fallen-watcher",
+    "title": "The Fallen Watcher",
+    "images": [
+      { "src": "/portfolio/tree-bookmarkFRONT.jpeg", "alt": "Bent copper bookmark" },
+      { "src": "/portfolio/tree-bookmarkABOVE.jpg", "alt": "Skeleton under a tree" },
+      { "src": "/portfolio/beehive-sketch.jpeg", "alt": "Beehive side sketch" },
+      { "src": "/portfolio/skeleton-sketch.jpeg", "alt": "Skeleton side sketch" }
+    ],
+    "description": "A bent copper bookmark showing a skeleton staring at a bee nest on a tree. I stamped this one a lot to give it texture. That is how the tree, leaves, beehive, and basically everything looks so detailed. This taught me how to use stamps, and also how to draw most of a skeleton. I spent a long time practicing on drawing a good skull. I also realized the downside of stamps and texture, that it can stretch the metal a lot. This was a gift for my mother, and I had a lot of fun making it. <br>We were supposed to write a story to get ideas, here is mine:<br><br>There is a bee, flying around. To a flower it flys, away from its friends in the hives. Slowly it drifts forward to collect the pollen which it will bring back to make honey. It slowly drones forward with nothing in sight, aimless it moves, no knowledge of below it. Below where he lurks, hidden from sight. Death lurks for those bees who can no longer maintain flight."
+  },
+  {
+    "id": "silver-shaker",
+    "title": "The Silver Shaker",
+    "images": [
+      { "src": "/portfolio/silver-bowl-prong-ring.jpeg", "alt": "Prong setting ring" },
+      { "src": "/portfolio/HK-inspiration.jpeg", "alt": "Inspiration from Hollow Knight"},
+      { "src": "/portfolio/silver-prong-sketch.jpeg", "alt": "Sketches for the ring"}
+    ],
+    "description": "This is a very thick banded silver ring, with lava rock set in prongs. The prongs unfortunately are a bit loose, so the rock shakes when moved. The band was inspired by the horns visible in the final bossfight of <em>Hollow Knight</em>. When setting this ring, I struggled a lot to get the prongs on. This is my fault, because I did not have a good plan from the beginning. Because I was struggling to get even two prongs soldered to the ring, I decided to stop with my two prongs and not risk going for a third. Instead, I cut both of the prongs down the middle so I would effectively have four prongs, so the rock could actually be secure."
+  },
+  {
+    "id": "perpetual-witness",
+    "title": "The Perpetual Witness",
+    "images": [
+      { "src": "/portfolio/spider-castL.jpeg", "alt": "Bronze cast spider left view" },
+      { "src": "/portfolio/spider-castR.jpeg", "alt": "Bronze cast spider right view" },
+      { "src": "/portfolio/spider-sketch.jpeg", "alt": "Spider ideas and sketches" }
+    ],
+    "description": "As part of my first lost wax casting, I made a spider. Although a few limbs did not fully attach, I was able to replace them. I really like how this guy turned out. It was intended to be a charm who watched over me and prevented boredom. That is why it has so many eyes on top of it's head. It is made out of bronze, but I stained it so it is dark. However, I stained it way too much so it looks brown."
+  },
+  {
+    "id": "retentive-sundial",
+    "title": "The Retentive Sundial",
+    "images": [
+      { "src": "/portfolio/tree-clockABOVE.jpeg", "alt": "Bronze clock falling on tree" },
+      { "src": "/portfolio/tree-clockFRONT.jpeg", "alt": "Bronze tree stretching branches" },
+      { "src": "/portfolio/dalí-clock-inspiration.jpg", "alt": "Inspiration painting by Salvador Dalí" },
+      { "src": "/portfolio/tree-sketch.jpeg", "alt": "Sketches and ideas for tree casting" }
+    ],
+    "description": "As part of my first lost wax casting assignment, I replicated <em>The Persistence of Memory</em> by Salvador Dalí. Making the bark was pretty difficult, but I think it turned out pretty good, if not quite tree-like. I did not think about the numbers on the clock when I had this idea, because making tiny recognizable numbers is hard. This was supposed to be a charm that would help me be more efficient with my time and stop procrastinating. I do not think it has worked."
+  },
+  {
+    "id": "lush-ridge",
+    "title": "The Lush Ridge",
+    "images": [
+      { "src": "/portfolio/leaf-band-prong-ring.jpeg", "alt": "Rock set in ring" },
+      { "src": "/portfolio/leaf-band-standing.jpeg", "alt": "Leaf banded ring standing" }
+    ],
+    "description": "I decided to make my sister a birthday gift, and this is what it was. It contains a quartz rock from a trip to Mexico, and the band features a leaf design. It was a bit sloppy, and I wish I had more time to polish it up, but overall it is not a terrible ring. It is actually quite comfortable, because the leaves bend outward making it easy to put on and take off."
+  },
+  {
+    "id": "sterling-rabbit",
+    "title": "The Sterling Rabbit",
+    "images": [
+      { "src": "/portfolio/silver-bunny-castL.jpeg", "alt": "Small silver bunny" },
+      { "src": "/portfolio/silver-bunny-castSIDE.jpeg", "alt": "Small silver bunny side view" }
+    ],
+    "description": "I made a small silver cast rabbit for my sister at Christmas. She likes bunnies, so I made one her a lopeared bunny. It is small, but still has large amounts of detail because it was made out of soft wax. I even gave it the texture of fur using a toothpick. I was unable to file off a little piece of scrap metal connected to it's foot, which is visible in the above photo."
   },
   {
     "id": "sedentary-liver",
     "title": "The Sedentary Liver",
     "images": [
-      { "src": "/portfolio/silver-dog-signet-ring.jpeg", "alt": "Silver dog signet ring" }
+      { "src": "/portfolio/silver-dog-signet-ring.jpeg", "alt": "Silver dog signet ring" },
+      { "src": "/portfolio/dog-sketch-large.jpeg", "alt": "Initial large sketch of dog" },
+      { "src": "/portfolio/dog-sketch-small.jpeg", "alt": "Smaller finalized sketch of dog" }
     ],
-    "description": "A large silver signet ring depicting one of my dogs, Tucker, asleep. Made from a flat silver sheet and stained with acid for contrast. Highly polished and reflective — one of my favorite pieces."
-  },
-  {
-    "id": "ethereal-ouroboros",
-    "title": "The Ethereal Ouroboros",
-    "images": [
-      { "src": "/portfolio/dainty-ring.jpeg", "alt": "Thin brass ring" }
-    ],
-    "description": "Multiple people asked me for a small dainty ring made out of brass, so I made a few. They don't take long to make, but they are very low quality. Brass is not a great material, unfortunately."
-  },
-  {
-    "id": "verdant-crag",
-    "title": "The Verdant Crag",
-    "images": [
-      { "src": "/portfolio/leaf-band-prong-ring.jpeg", "alt": "Rock set in ring" }
-    ],
-    "description": "One time I decided to make my sister a birthday gift, and this is what it was. It contains a quartz rock from her trip to Mexico, and the band features a leaf design, as requested."
-  },
-  {
-    "id": "clandestine-assemblage",
-    "title": "The Clandestine Assemblage",
-    "images": [
-      { "src": "/portfolio/thick-band-ring.jpeg", "alt": "Thick brass ring" }
-    ],
-    "description": "This was an upgrade to the first simple ring I made. It uses an extra thick piece of brass. The outside truly was polished a lot, but the jewelry guard covers that up. The edges are not sanded."
-  },
-  {
-    "id": "ameliorated-morsel",
-    "title": "The Ameliorated Morsel",
-    "images": [
-      { "src": "/portfolio/copper-jank-inlay-ring.jpeg", "alt": "Brass with copper inlay ring" }
-    ],
-    "description": "I had heard about inlay rings, and I wanted to test them out, but only quickly without too much effort. This resulted in me using scrap metal, so the result looks really bad. Personally, I do not hate it as much as it looks bad."
+    "description": "This is a fairly large silver signet ring depicting one of my dogs, Tucker, asleep. It uses two plates soldered ontop one another to increase the depth and make an image. The back plate was stained with liver of sulfur for better contrast. I polished this a lot so it became extremely reflective. This is one of my favorite pieces."
   },
   {
     "id": "coral-bauble",
@@ -53,79 +85,16 @@
     "images": [
       { "src": "/portfolio/gemstone-signet-ring.jpeg", "alt": "Silver signet ring with pink rock" }
     ],
-    "description": "For Christmas, I made my mother a silver signet ring with a pink gemstone bezel set on top. Personally, I think this thing looks fantastic."
+    "description": "For Christmas, I made my mother a silver signet ring with a pink gemstone bezel set on top. Personally, I think this thing looks fantastic. It was one of my first times creating a signet ring and also one of my first times using a bezel setting. However, I was able to use it effetively to create a splendid ring. The stone I set was not round, so I had to cut it and carve it into the correct shape. I then sanded it down and polished it with the few tools I had. It never became shiny, but I also did not have the right tools to make it shiny. "
   },
   {
-    "id": "fallen-watcher",
-    "title": "The Fallen Watcher",
-    "images": [
-      { "src": "/portfolio/tree-bookmarkFRONT.jpeg", "alt": "Bent copper bookmark" },
-      { "src": "/portfolio/tree-bookmarkABOVE.jpg", "alt": "Skeleton under a tree" }
-    ],
-    "description": "A bent copper bookmark showing a skeleton staring at a bee nest on a tree. Texturing plays a major role, emphasizing the depth of the shapes and the scene's mood."
-  },
-  {
-    "id": "trembling-shruber",
-    "title": "The Trembling Shruber",
-    "images": [
-      { "src": "/portfolio/frog-keychain.jpeg", "alt": "Brass frog keychain" }
-    ],
-    "description": "A frog-shaped textured brass keychain inspired by <a href='/portfolio/frog-inspiration.jpg' target='_blank'>this photo</a>. My very first project — and still one of the coolest to me."
-  },
-  {
-    "id": "perpetual-perspicacity",
-    "title": "The Perpetual Perspicacity",
-    "images": [
-      { "src": "/portfolio/spider-castL.jpeg", "alt": "Bronze cast spider left view" },
-      { "src": "/portfolio/spider-castR.jpeg", "alt": "Bronze cast spider right view" }
-    ],
-    "description": "As part of my first lost wax casting, I made a spider. Although a few limbs did not fully attach, I was able to replace them. I really like how this guy turned out."
-  },
-  {
-    "id": "anamnestic-arbol",
-    "title": "The Anamnestic Arbol",
-    "images": [
-      { "src": "/portfolio/tree-clockABOVE.jpeg", "alt": "Bronze clock falling on tree" },
-      { "src": "/portfolio/tree-clockFRONT.jpeg", "alt": "Bronze tree stretching branches" }
-    ],
-    "description": "As part of my first lost wax casting assignment, I replicated <a href='/portfolio/dalí-clock-inspiration.jpg'>The Persistence of Memory</a> by Salvador Dalí. It was supposed to be a charm to help me be more efficient with my time."
-  },
-  {
-    "id": "exuviating-polliwog",
-    "title": "The Exuviating Polliwog",
+    "id": "leaping-polliwog",
+    "title": "The Leaping Polliwog",
     "images": [
       { "src": "/portfolio/silver-frogL.jpeg", "alt": "Small silver frog from left view" },
       { "src": "/portfolio/silver-frogR.jpeg", "alt": "Small silver frog from right view" }
     ],
-    "description": "As part of jewelry II, we had to make two additional lost wax castings, one out of soft wax, one out of hard wax. This was the soft wax one and I made it for a <a href='https://edhrec.com/commanders/grolnok-the-omnivore'>MTG croak counter</a>."
-  },
-  {
-    "id": "fathomless-ward",
-    "title": "The Fathomless Ward",
-    "images": [
-      { "src": "/portfolio/card-holder.jpeg", "alt": "Brass card holder" }
-    ],
-    "description": "I wanted to make a special card holder for a <a href='https://magic.wizards.com/en/formats/commander' target='_blank'>MTG commander</a>, so I made this. It works as intended and it is pretty nice."
-  },
-  {
-    "id": "sterling-lagomorph",
-    "title": "The Sterling Lagomorph",
-    "images": [
-      { "src": "/portfolio/silver-bunny-castL.jpeg", "alt": "Small silver bunny" },
-      { "src": "/portfolio/silver-bunny-castSIDE.jpeg", "alt": "Small silver bunny side view" }
-    ],
-    "description": "I made a small silver cast rabbit for my sister at Christmas. She likes bunnies, so I made one for her."
-  },
-  {
-    "id": "revolving-aureole",
-    "title": "The Revolving Aureole",
-    "images": [
-      { "src": "/portfolio/spinning-ringOPEN.jpeg", "alt": "A spinning ring, in full form" },
-      { "src": "/portfolio/spinning-ringREST.jpeg", "alt": "A spinning ring, resting" },
-      { "src": "/portfolio/spinning-ringSIT.jpeg", "alt": "A spinning ring, on the ground" },
-      { "src": "/portfolio/spinning-ringSTAND.jpeg", "alt": "A spinning ring, standing" }
-    ],
-    "description": "I wanted to make this, because I thought it would be epic. I wanted to have something to play with in class, because class can be boring, and spinning rings are fun. I was sort of inspired by the <a href='/portfolio/time-turner-inspiration.webp' target='_blank'>time turner</a> from <em>Harry Potter</em>, but I did come up with most of this on my own."
+    "description": "I always enjoyed tiny statues of creatures. I had the opportunity to make a small thing out of soft wax, so I decided to make a jumping frog. It was difficult, even though it did not turn out as nice as I had hoped it would. Making a statues from soft wax is required me to start over many times, because I might burn too much wax while trying to attach a leg or cut a hole by the tongue."
   },
   {
     "id": "crimson-poltroon",
@@ -134,8 +103,41 @@
       { "src": "/portfolio/silver-chicken-ringFRONT.jpeg", "alt": "Large chicken ring with ruby set, front view" },
       { "src": "/portfolio/silver-chicken-ringL.jpeg", "alt": "Large chicken ring with ruby set, left view" },
       { "src": "/portfolio/silver-chicken-ringR.jpeg", "alt": "Large chicken ring with ruby set, right view" },
-      { "src": "/portfolio/silver-chicken-ringSIDE.jpeg", "alt": "Large chicken ring with ruby set, side view" }
+      { "src": "/portfolio/silver-chicken-ringSIDE.jpeg", "alt": "Large chicken ring with ruby set, side view" },
+      { "src": "/portfolio/chicken-sketch.jpeg", "alt": "Sketch of the chicken ring" }
     ],
-    "description": "For my grandmother, I made a silver chicken ring with a ruby in a prong setting. She loves chickens so I made the entire ring into a chicken sitting on your finger. In front and behind the chicken are two roses, because they are my grandmother's favorite flower. Her birthstone is a ruby, so there is a large ruby prong set in the center of the chicken. This was carved out of hard wax and taught me patience."
+    "description": "For my grandmother, I made a silver chicken ring with a ruby in a prong setting. She loves chickens so I made the entire ring into a chicken sitting on your finger. In front and behind the chicken are two roses, because they are my grandmother's favorite flower. Her birthstone is a ruby, so there is a large ruby prong set in the center of the chicken. This was carved out of hard wax and taught me patience. The chicken turned out a little bit too big, so the ring ended up being cluncky and heavy, but it is still nice. I think my favorite part is the roses. They were made out of soft wax and melted onto the ring, and I really love how they look."
+  },
+  {
+    "id": "fathomless-ward",
+    "title": "The Fathomless Ward",
+    "images": [
+      { "src": "/portfolio/card-holder.jpeg", "alt": "Brass card holder" },
+      { "src": "/portfolio/card-holder-sketch.jpeg", "alt": "Card holder sketch" }
+    ],
+    "description": "I wanted to make a special card holder for a <a href='https://magic.wizards.com/en/formats/commander' target='_blank'>MTG commander</a>, so I made this. It works as intended and it is pretty nice. I kind of cheated on the hinges, because instead of using four tubes like I planned, I used only two. This means that it is very unstable. I also just bent the ends up rather than riveting them. However, it is still functional, and even locks in place, which is nice."
+  },
+  {
+    "id": "revolving-aureole",
+    "title": "The Revolving Aureole",
+    "images": [
+      { "src": "/portfolio/spinning-ringOPEN.jpeg", "alt": "A spinning ring, in full form" },
+      { "src": "/portfolio/spinning-ringREST.jpeg", "alt": "A spinning ring, resting" },
+      { "src": "/portfolio/spinning-ringSIT.jpeg", "alt": "A spinning ring, on the ground" },
+      { "src": "/portfolio/spinning-ringSTAND.jpeg", "alt": "A spinning ring, standing" },
+      { "src": "/portfolio/time-turner-inspiration.jpeg", "alt": "Timeturner inspiration" },
+      { "src": "/portfolio/spinning-ring-sketch.jpeg", "alt": "Spinning ring sketch" }
+    ],
+    "description": "I wanted to make this, because I thought it would be epic. I wanted to have something to fidget with in class, because class can be boring, and spinning rings are fun. I was sort of inspired by the time turner from <em>Harry Potter</em>, but I did come up with most of this on my own. I failed to get one pin soldered, so this ring is not perfect. It sort of sounds weird when it spins, and is not great at spinning. This ring is not very polished, but that is not the point of it. It was designed to be fun rather than pretty."
+  },
+  {
+    "id": "jingling-chime",
+    "title": "The Jingling Chime",
+    "images": [
+      { "src": "/portfolio/bell-front.jpeg", "alt": "Shiny bell standing up" },
+      { "src": "/portfolio/bell-side.jpeg", "alt": "Bell with inside visible" },
+      { "src": "/portfolio/bell-sketch.jpeg", "alt": "Sketch of a bell" }
+    ],
+    "description": "I wanted to make a bell, so I decided to make this. It ended up nice, and has a clear ring to it. I did not polish the inside, because it would have been very difficult, and I think it looks fine just like this. I really enjoyed making this bell. It was also fun to work on something more technical and linear in style rather than typical artsy jewelry."
   }
 ]

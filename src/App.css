@@ -1,263 +1,540 @@
+/* ===== FONTS ===== */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500;600&display=swap');
+
 /* ===== COLOR PALETTE ===== */
 :root {
-  --green: #71f28b;
-  --blue: #3a7ac9;
-  --navy: #3d5d75;
-  --forest: #2f5334;
-  --brown: #92552d;
-  --text-dark: #222;
+  /* From the swatch — dark teal → steel blue → muted teal → sage → pale sage */
+  --c1:         #1e3a3f;   /* darkest — navbar, hero depth */
+  --c2:         #3a6b7a;   /* mid blue-teal — accents, active states */
+  --c3:         #5a9098;   /* muted teal — borders, hover tints */
+  --c4:         #7aab8a;   /* sage green — highlights, badges */
+  --c5:         #c8dfc0;   /* pale sage — light accents */
+
+  /* Semantic aliases (keeps all the existing references working) */
+  --forest:     var(--c1);
+  --navy:       var(--c2);
+  --blue:       var(--c3);
+  --green:      var(--c4);
+  --brown:      #8a7055;   /* kept for dog image borders — warm neutral */
+
+  --text-dark:  #1a1a1a;
   --text-light: #fff;
-  --bg-light: #f9f9f9;
+
+  /* Backgrounds — creamy rather than stark white */
+  --bg:         #f0ece4;   /* warm cream — general page bg */
+  --bg-card:    #f7f3ec;   /* slightly lighter cream — cards, sidebar */
+  --bg-paper:   #ede8de;   /* sketchbook paper tone — art detail panel */
+  --border:     #c8bfaf;   /* warm taupe border */
 }
 
-/* ===== GLOBAL STRUCTURE ===== */
+/* ===== RESET & BASE ===== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* Ensure the body flows normally */
 body {
-  background-color: var(--bg-light);
+  background-color: var(--bg);
   color: var(--text-dark);
-  font-family: 'Inter', sans-serif;
-  margin: 0;
+  font-family: 'DM Sans', sans-serif;
   line-height: 1.6;
-  width: 100%;
-  overflow-x: hidden;
+  overflow-x: hidden; 
 }
 
-/* ===== MAIN CONTENT ===== */
-main {
+a { color: var(--blue); font-weight: 600; text-decoration: none; }
+a:hover { color: var(--forest); }
+
+/* ===== APP SHELL ===== */
+/* Ensure the app shell stretches naturally */
+.app {
+  min-height: 100vh;
+  width: 100%;
   display: flex;
-  justify-content: center;
-  margin-top: 2rem;
-  padding: 1rem 2rem;
-  text-align: center;
-  width: 100vw; /* ensure it fills horizontally */
-  box-sizing: border-box; /* ensures padding doesn't cause overflow */
+  flex-direction: column;
 }
 
-/* ===== HEADERS ===== */
-header {
-  background: linear-gradient(90deg, var(--green), var(--blue));
-  color: var(--text-light);
-  padding: 4rem 1rem;
-  border-bottom: 6px solid var(--forest);
+/* ===== NAVBAR ===== */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--forest);
+  padding: 0 2rem;
+  height: 56px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.18);
   width: 100%;
-  margin: 0;
-  margin-top: -8px;
-  border-top: 1px solid transparent;
-  text-align: center;
-  overflow-x: hidden;
 }
-.title {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-}
-.subtitle {
-  font-size: 1rem;
-  max-width: 600px;
-  margin: 0 auto;
-}
-.sub-header {
-  background: var(--navy);
-  color: var(--text-light);
-  padding: 2rem 0.5rem;
-  border-top: 3px solid var(--brown);
-  width: 100%;
-  margin: 0;
-  margin-top: -30px;
-  border-top: 1px solid transparent;
-  text-align: center;
-  overflow-x: hidden;
-}
-.sub-header .title {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-/* === END HEADERS === */
-
-/* ===== FOOTERS ===== */
-footer {
-  background-color: var(--forest);
-  color: var(--text-light);
-  padding: 1rem 2rem;
-  margin-top: 0;
-  font-size: 0.9rem;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  text-align: center;
-  overflow-x: hidden;
-}
-
-/* ===== SECTION ===== */
-section {
-  padding: 4rem 2rem;
-  text-align: center;
-  background-color: white;
-  border: 2px solid var(--navy);
-  border-radius: 12px;
-  width: 80%;
-  max-width: 700px;
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-  margin: 1rem;
-}
-section h2 {
-  color: var(--navy);
-  margin-bottom: 1rem;
-}
-.link-list {
-  list-style: none;
-  padding: 0;
-}
-.link-list li {
-  margin: 1rem 0;
-  font-size: 1.1rem;
-}
-
-/* ===== BUTTONS ===== */
-button {
-  background-color: var(--blue);
-  color: var(--text-light);
-  border: none;
-  padding: 0.5rem 1rem;
-  margin: 1rem;
-  border-radius: 8px;
-  font-size: 1rem;
+.navbar__logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  color: var(--c5);
   cursor: pointer;
-  transition: 0.3s ease;
-  height: min-content;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
 }
-button:hover {
-  background-color: var(--green);
-  color: var(--text-dark);
-}
-
-/* ==== NAVIGATION ==== */
-.nav {
-  text-align: left;
-  margin-left: 2rem;
-  margin-top: 1rem;
-}
-
-.sub-nav-bg {
-  background-color: var(--navy);
-  width: 100%;
-  height: 100%;
-  padding: 1rem;
-}
-.sub-nav {
-  justify-content: center;
+.navbar__tabs { display: flex; gap: 0.25rem; }
+.navbar__tab {
+  background: transparent;
+  color: rgba(255,255,255,0.75);
+  border: none;
+  padding: 0.4rem 1rem;
   margin: 0;
-  padding: 0rem;
-  display: flex;
-  flex-direction: row;
-}
-
-/* ===== LINKS ===== */
-a {
-  color: var(--blue);
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s ease;
-}
-a:hover {
-  color: var(--green);
-}
-
-
-/* ===== GALLERY ===== */
-.gallery {
-  column-count: 3; /* adjust for your layout */
-  column-gap: 2rem;
-  padding: 2rem;
-  width: 90%;
-  max-width: 1200px;
-}
-.art-card {
-  display: inline-block;
-  width: 100%;
-  max-width: 100%;
-  box-sizing: border-box;
-  margin-bottom: 2rem;
-  background-color: white;
-  border: 2px solid var(--navy);
-  border-radius: 10px;
-  padding: 1.5rem;
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease;
-}
-.art-card:hover {
-  transform: translateY(-5px);
-}
-.art-card h3 {
-  color: var(--forest);
-  font-size: 1.3rem;
-  margin-bottom: 0.5rem;
-}
-.art-card img {
-  width: 100%;
-  border-radius: 8px;
-  margin-bottom: 0.8rem;
-}
-/* === END GALLERY === */
-
-.code-gallery {
-  column-count: 2; /* adjust for your layout */
-  column-gap: 2rem;
-  padding: 2rem;
-  width: 90%;
-  max-width: 1200px;
-}
-.embed-card {
-  display: inline-block;
-  width: 100%;
-  max-width: 100%;
-  box-sizing: border-box;
-  margin-bottom: 2rem;
-  background-color: white;
-  border: 2px solid var(--navy);
-  border-radius: 10px;
-  padding: 1.5rem;
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease;
-}
-.embed-card:hover {
-  transform: translateY(-5px);
-}
-.embed-card h3 {
-  color: var(--forest);
-  font-size: 1.3rem;
-  margin-bottom: 0.5rem;
-}
-
-/* ===== ABOUT PAGE ===== */
-.hobby {
-  background-color: var(--bg-light);
-  border-left: 5px solid var(--blue);
-  margin: 1.5rem 0;
-  padding: 1rem;
-  text-align: left;
   border-radius: 6px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.navbar__tab:hover {
+  background: rgba(255,255,255,0.1);
+  color: var(--text-light);
+}
+.navbar__tab--active {
+  background: var(--green);
+  color: var(--forest) !important;
+  font-weight: 600;
+}
+.navbar__tab--active:hover {
+  background: var(--green);
+  color: var(--forest) !important;
 }
 
-.hobby h3 {
-  margin-top: 0;
+/* ===== HERO ===== */
+.hero {
+  background: linear-gradient(135deg, var(--forest) 0%, var(--blue) 60%, var(--c5) 100%);
+  padding: 5rem 2rem 4rem;
+  text-align: center;
+  border-bottom: 4px solid var(--blue);
+  width: 100%;
+}
+.hero__name {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(3rem, 8vw, 5.5rem);
+  font-weight: 900;
+  color: var(--text-light);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+.hero__sub {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: rgba(255,255,255,0.75);
+  max-width: 520px;
+  margin-inline: auto;
+}
+
+/* ===== PAGE HEADER ===== */
+.page-header {
+  background: linear-gradient(90deg, var(--green), var(--navy));
+  color: var(--text-light);
+  padding: 3rem 2rem 2.5rem;
+  text-align: center;
+  border-bottom: 3px solid var(--blue);
+  width: 100%;
+}
+.page-header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+}
+.page-header p {
+  margin-top: 0.5rem;
+  color: rgba(255,255,255,0.7);
+}
+
+/* ===== SUB-NAV ===== */
+.sub-nav {
+  background: var(--navy);
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  border-bottom: 2px solid var(--border);
+  width: 100%;
+}
+.sub-nav__btn {
+  background: transparent;
+  color: rgba(255,255,255,0.7);
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 0.35rem 1.1rem;
+  margin: 0;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.sub-nav__btn:hover { background: rgba(255,255,255,0.1); color: white; }
+.sub-nav__btn--active {
+  background: var(--green);
+  color: var(--forest);
+  border-color: var(--green);
+  font-weight: 600;
+}
+.sub-nav__btn--active:hover {
+  background: var(--green);
   color: var(--forest);
 }
+
+/* ===== HOME MAIN ===== */
+/* Update your home-main CSS */
+.home-main {
+  flex: 1;
+  width: 100%;
+  padding: 3rem 2rem;
+  overflow-y: auto; /* Added so the main page can scroll internally */
+}
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: var(--forest);
+  margin-bottom: 1.5rem;
+}
+.hobbies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+  width: 100%;
+}
+.hobby-card {
+  background: var(--bg-card);
+  border: 2px solid var(--border);
+  border-left: 5px solid var(--blue);
+  border-radius: 10px;
+  padding: 1.2rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.hobby-card:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(0,0,0,0.08); }
+.hobby-card h3 { color: var(--forest); margin-bottom: 0.4rem; font-size: 1.05rem; }
+.hobby-card p  { font-size: 0.92rem; color: #444; }
+
+.dogs-block {
+  background: var(--bg-card);
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+.dogs-block h3 {
+  font-family: 'Playfair Display', serif;
+  color: var(--forest);
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+.dogs-block p { color: #555; margin-bottom: 1rem; }
 
 .dog-gallery {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
   gap: 1.5rem;
-  margin-top: 1rem;
 }
-
 .dog-img {
-  width: 250px;
-  height: auto;
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
   border-radius: 10px;
   border: 3px solid var(--brown);
 }
 
-.text-muted {
-  color: gray;
+.engineering-link { margin-top: 0.5rem; }
+.engineering-link a { font-size: 1rem; }
+
+.sidebar-layout {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  flex: 1; /* Tells the wrapper to fill any leftover vertical screen space */
+}
+
+/* Left list panel */
+/* Update your sidebar CSS */
+.sidebar {
+  width: 260px;
+  flex-shrink: 0;
+  background: var(--bg-card);
+  border-right: 2px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  
+  /* The Sticky Magic */
+  position: sticky;
+  top: 56px; /* Sits right below your navbar */
+  height: calc(100vh - 56px); /* Takes up the rest of the screen height */
+  overflow-y: auto; /* Allows the sidebar to scroll internally if the list is long */
+}
+
+/* Art page gets a wider sidebar for bigger thumbnails */
+.sidebar--wide {
+  width: 380px;
+}
+.sidebar--wide .sidebar__thumb {
+  width: 90px;
+  height: 90px;
+}
+.sidebar--wide .sidebar__item {
+  padding: 0.9rem 1rem;
+}
+.sidebar--wide .sidebar__label {
+  font-size: large;
+}
+
+/* Group heading inside sidebar */
+.sidebar__group { display: flex; flex-direction: column; }
+.sidebar__group-label {
+  padding: 0.5rem 1rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--navy);
+  background: var(--bg-paper);
+  border-bottom: 1px solid var(--border);
+  border-top: 2px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.sidebar__item {
+  all: unset;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.85rem 1rem;
+  cursor: pointer;
+  border-bottom: 1px solid var(--border);
+  transition: background 0.15s;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'Playfair Display', serif
+}
+.sidebar__item:hover { background: rgba(58,122,201,0.06); }
+.sidebar__item--active {
+  background: var(--c5);
+}
+.sidebar__item--active .sidebar__label { color: black; }
+.sidebar__item--active:hover { background: var(--c5); }
+
+.sidebar__thumb {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+  border-radius: 6px;
+  flex-shrink: 0;
+  border: 1px solid var(--border);
+}
+.sidebar__label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  line-height: 1.3;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.sidebar__badge {
+  font-size: 0.72rem;
+  background: var(--green);
+  color: var(--forest);
+  padding: 0.1rem 0.45rem;
+  border-radius: 20px;
+  font-weight: 700;
+  width: fit-content;
+}
+
+
+
+/* Add this to lock the outer shell of the Art page */
+.art-page {
+  min-height: 0 !important;
+  height: calc(100vh - 2.35rem - 56px) !important; /* Forces the app shell to fill the viewport height */
+  overflow: hidden;
+}
+.art-page .sidebar-layout {
+  flex: 1; 
+  min-height: 0 !important; /* Forces it to ignore the 400px and allow shrinking */
+  align-items: stretch;
+  overflow: hidden; 
+}
+
+.art-page .sidebar,
+.art-page .detail-panel {
+  min-height: 0 !important;
+  overflow-y: auto; 
+  position: static; /* Disables the sticky behavior you used for the home page */
+}
+.art-page .navbar,
+.art-page .page-header,
+.art-page .hero,
+.art-page .footer {
+  flex-shrink: 0; 
+  min-height: 0 !important;
+}
+/* Enable internal scrolling for the detail panel 
+.art-page .detail-panel {
+  height: 100%; /* Fills the sidebar-layout wrapper *
+  overflow-y: auto; /* Enables internal scrolling for the art content *
+  align-self: auto; /* Resets the alignment *
+} */
+ 
+
+/* Right detail panel */
+.detail-panel {
+  flex: 1;
+  padding: 2rem 2.5rem;
+  background: var(--bg);
+  align-self: stretch; /* Forces the background to pull down to the footer */
+}
+
+/* Art page — sketchbook paper look */
+.detail-panel--paper {
+  background-color: var(--bg-paper);
+  background-image:
+    /* Subtle horizontal ruled lines */
+    repeating-linear-gradient(
+      to bottom,
+      transparent,
+      transparent 27px,
+      rgba(139, 119, 90, 0.04) 27px,
+      rgba(139, 119, 90, 0.04) 28px
+    ),
+    /* Very faint grain overlay */
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.45'/%3E%3C/svg%3E");
+}.detail__title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.9rem;
+  color: var(--forest);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+.detail__badge {
+  font-family: 'Playfair Display', serif;
+  font-size: 0.8rem;
+  background: var(--green);
+  color: var(--forest);
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+  font-weight: 700;
+}
+.detail__subtitle {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+.detail__desc {
+  font-size: 0.97rem;
+  color: #333;
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+}
+.detail__desc a { color: var(--blue); }
+.detail__desc a:hover { color: var(--forest); }
+
+.detail__images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+.detail__img {
+  max-width: 300px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  object-fit: cover;
+}
+
+.detail__embed {
+  margin: 1rem 0;
+}
+.detail__embed iframe {
+  border-radius: 8px;
+  max-width: 100%;
+}
+
+.detail__link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  margin-right: 1rem;
+  color: var(--blue);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+.detail__link:hover { color: var(--forest); }
+
+.detail__link--featured {
+  display: block;
+  background: var(--navy);
+  color: white !important;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 0.95rem;
+  margin-bottom: 1.25rem;
+  transition: background 0.2s;
+  width: fit-content;
+}
+.detail__link--featured:hover { background: var(--forest); }
+
+.detail__section { margin-top: 1.25rem; }
+.detail__section h4 {
+  color: var(--navy);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+.detail__section p { font-size: 0.95rem; color: #444; line-height: 1.6; }
+.detail__section a { color: var(--blue); }
+
+.project__img {
+  max-width: 550px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  object-fit: cover;
+}
+
+
+/* ===== FOOTER ===== */
+.footer {
+  background: var(--forest);
+  color: rgba(255,255,255,0.7);
+  text-align: center;
+  padding: 0.5rem 2rem;
+  font-size: 0.85rem;
+  width: 100%;
+}
+
+/* ===== MISC ===== */
+.loading { padding: 3rem; color: var(--navy); font-size: 1.1rem; }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 700px) {
+  
+  .sidebar-layout {
+    flex-direction: column;
+    height: auto;
+  }
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 2px solid var(--border);
+    max-height: 240px;
+    
+    /* Add this to disable sticky behavior on mobile */
+    position: static; 
+    height: auto;
+  }
+  .detail-panel { padding: 1.25rem; }
+  .navbar { padding: 0 1rem; }
+  .navbar__tab { padding: 0.35rem 0.6rem; font-size: 0.85rem; }
+  .hero { padding: 3rem 1.5rem; }
+  .hobbies-grid { grid-template-columns: 1fr 1fr; }
 }

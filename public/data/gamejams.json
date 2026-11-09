@@ -5,7 +5,7 @@
     "links": [
       { "label": "View on itch.io", "href": "https://lbaldwin26.itch.io/minute-party", "external": true }
     ],
-    "description": "This was the first game jam I ever did. Our team made the project in Unity, but we had some issues with the submission. In the end, it was fine and I learned a lot from this experience. It taught me how to be a better programmer and how to work under pressure. I knew I would be unable to make the project as well as I wanted, but it was okay. We ended up with a gameboard type game that was not too bad."
+    "description": "This was the first game jam I ever did. Our team was fairly large, but I was the main person who worked on the programming. We made the project in Unity, but we had some issues with the submission because there was some package we did not have installed to export the game properly. In the end, it ended up being okay, and I learned a lot from this experience. It taught me how to be a better programmer and how to work under pressure. I knew I would be unable to make the project as well as I wanted, but it was okay. We ended up with an online board game similar to <em>Mario Party</em> that was not too bad. "
   },
   {
     "id": "mini-golf-jam",
@@ -13,7 +13,7 @@
     "links": [
       { "label": "Play the game", "href": "https://neals.8thwall.app/golf-for-money", "external": true }
     ],
-    "description": "A fun game jam using 8th Wall. I had very little experience with 8th Wall in the past, so this allowed me to truly understand how to use it and helped improve my skills a lot. We made two minigolf holes — one more professional, one all about the theming. The first 2 holes were not created by us, but the last 2 were."
+    "description": "This was a game jam hosted by the now retired game studio, 8th Wall Studios. It was one of my first game jams, and at the time I had very little experience with 8th Wall. This allowed me to truly understand how to use 8th Wall. I was able to learn a lot of Typescript and a different type of programming. 8th Wall used data oriented programming rather than object oriented programming, which was new to me, so I had to learn a lot for this project. Our team consisted of Me and Neal, and we made two minigolf holes. The first hole was more technical and professional while the other hole was all about the theming. In the link below, the first two holes were not created by us, but the last two were."
   },
   {
     "id": "garfield-goobers",
@@ -22,7 +22,7 @@
       { "label": "Play the game", "href": "https://8th.io/46krt", "external": true },
       { "label": "View slideshow", "href": "/portfolio/garfield-goobers.pdf", "external": true }
     ],
-    "badge": "🏆 1st Place",
-    "description": "The 'Enehana Computer Science Club ran a game jam. We made a platformer where you avoid cannonballs and spikes as a beach ball to collect a key. If you survive to unlock the treasure chest, you become a rocket and must avoid octo-guards in a cave blocking the ending. Our team was the Garfield Goobers and we won first place."
+    "badge": "1st Place",
+    "description": "The Punahou 'Enehana Computer Science Club ran a game jam for one week. I participated with my friend Neal as the Garfield Goobers, and we won first place. We made a platformer where you avoid cannonballs and spikes as a beach ball to collect a key. If you survive to unlock the treasure chest, you become a rocket and must avoid octo-guards in a cave blocking the ending. This game was made in the now retired game engine, 8th Wall. It was incredibly fun to work on this game in the short timespan, and this lead me to work on many other games."
   }
 ]
