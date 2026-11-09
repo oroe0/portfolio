@@ -5,7 +5,7 @@
     "embedSrc": "https://editor.p5js.org/oroe28/full/1BuF1XlF8",
     "embedWidth": 400,
     "embedHeight": 442,
-    "description": "This is based on constructions you might do in geometry. It has an infinitely large workspace and can handle large numbers of points. CIRCLE TOOL: Click on one point to set the center, then another to set the radius. LINE TOOL: Connect two points with a line. REMOVE CIRCLES: Remove all circles attached to one point. REMOVE POINT: Delete a point and all its attached circles and lines. CREATE POINT: Creates a point wherever you click. WASD to move, and have fun!"
+    "description": "This is based on constructions you might do in geometry. It has an infinitely large workspace and can handle large numbers of points. <br>CIRCLE TOOL: Click on one point to set the center, then another to set the radius. <br>LINE TOOL: Connect two points with a line. <br>REMOVE CIRCLES: Remove all circles attached to one point. <br>REMOVE POINT: Delete a point and all its attached circles and lines. <br>CREATE POINT: Creates a point wherever you click. <br>WASD to move, and have fun!"
   },
   {
     "id": "casino",

@@ -1,19 +1,77 @@
-<!-- public/404.html -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page Not Found</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;600&display=swap" rel="stylesheet" />
     <style>
-      body { text-align: center; padding: 50px; font-family: sans-serif; background-color: rgb(138, 66, 168);}
-      h1 { font-size: 100px; }
-      p { font-size: 50px; }
-      a { color: #98befa; text-decoration: none; font-weight: 900; }
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+      body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, #2f5334 0%, #3d5d75 60%, #3a7ac9 100%);
+        font-family: 'DM Sans', sans-serif;
+        color: white;
+        text-align: center;
+        padding: 2rem;
+      }
+
+      .number {
+        font-family: 'Playfair Display', serif;
+        font-size: clamp(6rem, 25vw, 12rem);
+        font-weight: 900;
+        color: #71f28b;
+        line-height: 1;
+        letter-spacing: -0.04em;
+        text-shadow: 0 4px 40px rgba(113, 242, 139, 0.3);
+      }
+
+      .message {
+        margin-top: 1.5rem;
+        font-size: clamp(1rem, 3vw, 1.4rem);
+        color: rgba(255,255,255,0.85);
+        max-width: 480px;
+        line-height: 1.5;
+      }
+
+      .home-link {
+        display: inline-block;
+        margin-top: 2.5rem;
+        background: #71f28b;
+        color: #2f5334;
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 700;
+        font-size: 1rem;
+        padding: 0.7rem 1.8rem;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: background 0.2s, transform 0.2s;
+      }
+      .home-link:hover {
+        background: white;
+        transform: translateY(-2px);
+      }
+
+      .divider {
+        width: 60px;
+        height: 4px;
+        background: #71f28b;
+        border-radius: 2px;
+        margin: 1.5rem auto 0;
+        opacity: 0.5;
+      }
     </style>
   </head>
   <body>
-    <h1>404</h1>
-    <p>You have been messing with things not to be trifled with.</p>
-    <a href="/portfolio">Go back from whence you came</a>
+    <div class="number">404</div>
+    <div class="divider"></div>
+    <p class="message">You have been messing with things not to be trifled with.</p>
+    <a class="home-link" href="/portfolio">Go back from whence you came</a>
   </body>
 </html>
